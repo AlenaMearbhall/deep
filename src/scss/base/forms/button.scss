@@ -1,0 +1,19 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 178%;
+	color: #100C46;
+
+	display: inline-flex;
+	padding: 19px 46px;
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}

@@ -1,0 +1,51 @@
+//====================================================================================================
+
+.hero {
+    width: 100%;
+    background-color: $accentColor;
+
+    // .hero__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    // .hero__content
+
+    &__content {
+        flex: 1 1 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // @include adaptiveValue("margin-right", 134, 50);
+        
+    }
+
+    // .hero__title
+
+    &__title {
+        @include adaptiveValue("margin-bottom", 30, 12);
+    }
+
+    // .hero__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1,6;
+        @include adaptiveValue("max-width", 376, 100);
+        @include adaptiveValue("margin-bottom", 67, 18);
+
+    }
+
+    // .hero__image-ibg
+
+    &__image {
+        width: 100%;
+        flex: 70%;
+    }
+}
+//====================================================================================================
