@@ -10,8 +10,21 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
         
     }
+
+
+                &__container::after {
+                    background: url(@img/hero/01.jpeg);
+                    content: "";
+                    position: absolute;
+                    width: 200%;
+                    top: 0;
+                    left: 55%;
+                    height: 100%;
+                    flex: 0 1 70%;
+        }
 
     // .hero__content
 
@@ -20,7 +33,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        // @include adaptiveValue("margin-right", 134, 50);
+        flex: 0 1 30%;
         
     }
 
@@ -28,6 +41,7 @@
 
     &__title {
         @include adaptiveValue("margin-bottom", 30, 12);
+        @include adaptiveValue("margin-top", 200, 50);
     }
 
     // .hero__text
@@ -40,6 +54,10 @@
         @include adaptiveValue("margin-bottom", 67, 18);
 
     }
+
+        &__button {
+            @include adaptiveValue("margin-bottom", 312, 50);
+        }
 
     // .hero__image-ibg
 
