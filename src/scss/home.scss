@@ -131,12 +131,18 @@
         }
 
     &__content {
-        flex: 0 1 30%;
+        flex: 0 1 50%;
     }
 
-    &__list {}
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    &__item {}
+    &__item {
+        max-width: 296px;
+        flex: 1 1 50%;
+    }
 
     &__image {}
 
@@ -161,9 +167,30 @@
 
     &__image {}
 
-    &__title {}
+    &__title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 145%;
+        color: #100C46;
+        position: relative;
+        padding-left: rem(89);
 
-    &__text {}
+        &::before{
+            content: "";
+            background-color: #100C46;
+            width: rem(77);
+            height: rem(1);
+            position: absolute;
+            left: 0;
+            top: em(10, 16);
+        }
+    }
+
+    &__text {
+        color: rgba(16, 12, 70, 0.8);
+        font-weight: 400;
+        line-height: 1.6;
+    }
 }
 
 //====================================================================================================
