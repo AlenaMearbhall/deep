@@ -12,6 +12,10 @@ $accentColor: #6257FE;
     }
 
     &__services {}
+
+    &__portfolio {}
+
+    &__team {}
 }
 
 .button {
@@ -69,5 +73,12 @@ $accentColor: #6257FE;
                 &__dark {
                     color: #100C46;
                 }
+
+        &__center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $accentColor;
+        }
 }
 
