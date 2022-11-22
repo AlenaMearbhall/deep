@@ -8,7 +8,7 @@ $accentColor: #6257FE;
     }
 
     &__about {
-        
+
     }
 }
 
@@ -43,7 +43,7 @@ $accentColor: #6257FE;
         font-weight: 400;
         font-size: 16px;
         line-height: 1,37;
-        margin-bottom: rem(7);
+        margin-bottom: rem(10);
     }
 
     // .title__title
@@ -60,6 +60,8 @@ $accentColor: #6257FE;
         &_big {
         }
 
-        &_purple {}
+        &_purple {
+            color: $accentColor;
+        }
 }
 
