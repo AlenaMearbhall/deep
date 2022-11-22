@@ -117,6 +117,7 @@
 
     &__container {
         @include adaptiveValue("padding-top", 119, 20);
+        @include adaptiveValue("padding-bottom", 130, 20);
         display: flex;
     }
 
@@ -131,20 +132,28 @@
         }
 
     &__content {
-        flex: 0 1 50%;
+        flex: 0 1 60%;
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
+        @include adaptiveValue("margin-top", 85, 15);
     }
 
     &__item {
-        max-width: 296px;
-        flex: 1 1 50%;
+        // max-width: 296px;
+        flex: 1 1 40%;
+                &:not(:last-child) {
+                    @include adaptiveValue("margin-bottom", 63, 20);
+                    @include adaptiveValue("margin-right", 63, 20);
+                    // @include adaptiveValue("gap", 63, 20);
+                    }
     }
 
-    &__image {}
+    &__image {
+
+    }
 
         &__image-01 {
             position: absolute;
@@ -165,7 +174,9 @@
 
 .item-services {
 
-    &__image {}
+    &__image {
+        @include adaptiveValue("margin-bottom", 14, 12);
+    }
 
     &__title {
         font-weight: 600;
@@ -174,6 +185,7 @@
         color: #100C46;
         position: relative;
         padding-left: rem(89);
+        @include adaptiveValue("margin-bottom", 22, 15);
 
         &::before{
             content: "";
