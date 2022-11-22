@@ -66,4 +66,43 @@
         flex: 70%;
     }
 }
+
+.about {
+    width: auto;
+    background-color: #100C46;
+    position: relative;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+                &__container::after {
+                    background: #FFFFFF;
+                    content: "";
+                    position: absolute;
+                    width: 200%;
+                    top: 0;
+                    left: 55%;
+                    height: 100%;
+                }
+
+    &__content {
+        flex: 1 1 30%;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__image {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        z-index: 50;
+    }
+}
+
+
 //====================================================================================================

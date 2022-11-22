@@ -6,6 +6,10 @@ $accentColor: #6257FE;
 
     &__hero {
     }
+
+    &__about {
+        
+    }
 }
 
 .button {
@@ -24,13 +28,11 @@ $accentColor: #6257FE;
         transition: background-color 0.3s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-            background-color: #109bff;
+            background-color: #9992fd;
             color: #FFFFFF;
 		}
 	}
-	&._fw {
-		width: 100%;
-	}
+
 }
 
 .title {
@@ -57,5 +59,7 @@ $accentColor: #6257FE;
 
         &_big {
         }
+
+        &_purple {}
 }
 
