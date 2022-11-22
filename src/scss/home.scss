@@ -205,4 +205,34 @@
     }
 }
 
+.portfolio {
+
+    // .portfolio__container
+
+    &__container {
+        @include adaptiveValue("padding-top", 146, 20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .portfolio__title
+
+    &__title {
+        @include adaptiveValue("margin-bottom", 77, 15);
+    }
+
+    // .portfolio__list
+
+    &__list {
+        display: flex;
+        @include adaptiveValue("gap", 23, 15);
+    }
+
+    // .portfolio__item
+
+    &__item {}
+}
+
+
 //====================================================================================================
