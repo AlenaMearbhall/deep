@@ -10,6 +10,8 @@ $accentColor: #6257FE;
     &__about {
 
     }
+
+    &__services {}
 }
 
 .button {
@@ -63,5 +65,7 @@ $accentColor: #6257FE;
         &_purple {
             color: $accentColor;
         }
+
+                &__dark {}
 }
 
