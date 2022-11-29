@@ -328,15 +328,19 @@
 // contacts --------------------------------------------------
 
 .contacts {
+    @include adaptiveValue("margin-top", 148, 50);
     // .contacts__container
 
     &__container {
         display: flex;
+        position: relative;
     }
 
     // .contacts__main-block
 
-    &__main-block {}
+    &__main-block {
+        display: flex;
+    }
 
     // .contacts__title
 
@@ -350,11 +354,16 @@
 
     &__address {
         background-color: $accentColor;
+        height: 100%;
     }
 
     // .contacts__image
 
-    &__image {}
+    &__image {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+    }
 }
 
 .form {
