@@ -356,6 +356,8 @@
     // .contacts__address
 
     &__address {
+        // padding-right: -10%;
+        padding-left: 25%;
         background-color: $accentColor;
         @include adaptiveValue("padding-top", 238, 50);
         @include adaptiveValue("padding-bottom", 238, 50);
@@ -396,7 +398,7 @@
     // .address-contacts__item
 
     &__item {
-        width: 35%;
+    // width: 35%;
 
             &:not(:last-child) {
                 @include adaptiveValue("margin-bottom", 85, 15);
