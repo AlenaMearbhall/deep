@@ -213,12 +213,25 @@
 								<h1 class="title__title title__dark">Contact us</h1>
 							</div>
 
-							<form action="#" class="contacts__form">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Name" class="input">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email" class="input">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Subject" class="input">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Subject" class="input">
-								<button type="submit" class="contact__form-button button">Get Started</button>
+							<form action="#" class="contacts__form form">
+								<div class="form__item">
+									<input autocomplete="off" type="text" name="form[]" data-error="Error" data-required placeholder="Name"
+										class="form__input">
+								</div>
+								<div class="form__item">
+									<input autocomplete="off" type="text" name="form[]" data-error="Error" data-required="email" placeholder="Email"
+										class="form__input">
+								</div>
+								<div class="form__item">
+									<input autocomplete="off" name="form[]" placeholder="Subject" data-error="Error" class="form__input"></input>
+								</div>
+								<div class="form__item">
+									<textarea autocomplete="off" name="form[]" placeholder="Subject" data-error="Error" class="form__input"></textarea>
+								</div>
+
+								<div class="form__item">
+									<button type="submit" class="form__button">Send Message</button>
+								</div>
 							</form>
 
 							<ul class="contacts__address address-contacts__list">
