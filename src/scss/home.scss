@@ -333,13 +333,15 @@
 
     &__container {
         display: flex;
-        position: relative;
+        // position: relative;
     }
 
     // .contacts__main-block
 
     &__main-block {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     // .contacts__title
