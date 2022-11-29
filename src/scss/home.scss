@@ -390,11 +390,16 @@
     // .address-contacts__list
 
     &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 
     // .address-contacts__item
 
     &__item {
+        width: 35%;
 
             &:not(:last-child) {
                 @include adaptiveValue("margin-bottom", 85, 15);
