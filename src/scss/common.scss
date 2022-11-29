@@ -16,6 +16,8 @@ $accentColor: #6257FE;
     &__portfolio {}
 
     &__team {}
+
+    &__contacts {}
 }
 
 .button {
@@ -70,9 +72,9 @@ $accentColor: #6257FE;
             color: $accentColor;
         }
 
-                &__dark {
-                    color: #100C46;
-                }
+        &__dark {
+            color: #100C46;
+        }
 
         &__center {
             display: flex;

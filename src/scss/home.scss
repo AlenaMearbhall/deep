@@ -240,7 +240,7 @@
     &__item {}
 }
 
-
+// team --------------------------------------------------
 .team {
 
     // .team__container
@@ -327,18 +327,12 @@
 
 // contacts --------------------------------------------------
 
-.page {
-
-    // .page__contacts
-
-    &__contacts {}
-}
-
 .contacts {
-
     // .contacts__container
 
-    &__container {}
+    &__container {
+        display: flex;
+    }
 
     // .contacts__main-block
 
@@ -354,30 +348,13 @@
 
     // .contacts__address
 
-    &__address {}
+    &__address {
+        background-color: $accentColor;
+    }
 
     // .contacts__image
 
     &__image {}
-}
-
-.title {
-
-    // .title_purple
-
-    &_purple {}
-
-    // .title__text
-
-    &__text {}
-
-    // .title__title
-
-    &__title {}
-
-    // .title__dark
-
-    &__dark {}
 }
 
 .form {
