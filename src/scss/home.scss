@@ -396,7 +396,11 @@
     // .address-contacts__item
 
     &__item {
-        width: 45%;
+        width: 35%;
+
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 85, 15);
+                }
     }
 
     // .address-contacts__title
