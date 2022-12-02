@@ -328,6 +328,7 @@
 // contacts --------------------------------------------------
 
 .contacts {
+    // position: relative;
     @include adaptiveValue("margin-top", 148, 50);
     // .contacts__container
 
@@ -341,7 +342,6 @@
     &__main-block {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         flex: 1 1 auto;
     }
 
