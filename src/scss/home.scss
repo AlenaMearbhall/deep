@@ -373,16 +373,62 @@
 }
 
 .form {
+    display: grid;
+    gap: rem(16);
 
     // .form__item
-
     &__item {
-background-color: red;
-            &:not(:last-child) {
-				margin-bottom: rem(18);
-			}
+        &:last-child {
+            padding-top: rem(22);
+        }
     }
 
+    // .form__input
+    &__input {
+        width: 100%;
+        height: rem(48);
+        border-radius: rem(8);
+        padding: rem(0) rem(24);
+        background-color: #fff;
+
+        &::placeholder {
+            color: $greyColor;
+        }
+
+        &:focus {
+            &::placeholder {
+                color: $mainColor;
+            }
+        }
+    }
+
+    // .form__button
+    &__button {
+        background-color: $purpleColor;
+        padding: rem(16);
+        color: #fff;
+        width: 100%;
+        border-radius: rem(8);
+        transition: background-color 0.3s ease 0s;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #645bca;
+            }
+        }
+    }
+
+    &__error {
+        padding: rem(5) rem(24) rem(0) rem(24);
+        color: red;
+        font-size: rem(12);
+    }
+}
+
+textarea.form__input {
+    height: rem(190);
+    resize: vertical;
+    padding: rem(24);
 }
 
 .address-contacts {
