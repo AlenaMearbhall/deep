@@ -351,7 +351,9 @@
 
     // .contacts__form
 
-    &__form {}
+    &__form {
+        @include adaptiveValue("margin-top", 70, 15);
+    }
 
     // .contacts__address
 
@@ -374,15 +376,13 @@
 
     // .form__item
 
-    &__item {}
+    &__item {
+background-color: red;
+            &:not(:last-child) {
+				margin-bottom: rem(18);
+			}
+    }
 
-    // .form__input
-
-    &__input {}
-
-    // .form__button
-
-    &__button {}
 }
 
 .address-contacts {
